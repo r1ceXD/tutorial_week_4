@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Home</title>
+    <link rel="stylesheet" href="styles.css">
+    <script src="function.js" defer></script>
+</head>
+<body>
+    <!-- Navigation Bar -->
+    <header class="site-header">
+        <nav class="navbar container">
+            <a href="index.html" data-logo>
+                <img class="logo" src="images/logo_tv.png" alt="Logo">
+            </a>
+            <!-- <h1>Appliance Energy Consumption</h1> -->
+            <div class="nav-links">
+                <a class="active" href="index.html" data-page="home">Home</a>
+                <a href="televisions.html" data-page="televisions">Televisions</a>
+                <a href="about_us.html" data-page="about">About Us</a>
+            </div>
+        </nav>
+    </header>
+
+    <h1>Appliance Energy Consumption</h1>
+    <div id="content"></div>
+    <!-- Give the SVG a size so shapes can be seen -->
+    <svg width="300" height="150"></svg>
+    <!-- Load D3 first, then your D3 code file -->
+    <script src="https://d3js.org/d3.v7.min.js"></script>
+    <script src="energy-d3.js"></script>
+
+    <div class="responsive-svg-container">
+        
+    </div>
+
+    <!-- D3 library -->
+    <script src="https://d3js.org/d3.v7.min.js"></script>
+    <!-- NEW: T04-4 loader -->
+    <script src="t04-4-load.js"></script>
+    <script src="t04-5-bars.js"></script> 
+    <!-- NEW: JS for T04-3 only -->
+    <!-- <script src="t04-3-bars.js"></script> -->
+    <!-- Old T04-2 demo (temporarily disabled) -->
+    <!-- <script src="energy-d3.js"></script> -->
+
+</body>
+</html>
